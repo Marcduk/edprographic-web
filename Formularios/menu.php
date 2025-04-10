@@ -52,8 +52,8 @@
 </head>
 <body>
 
-<a href="/Frontend/index.html" class="btn btn-primary">
-  <i class="fas fa-arrow-left"></i> Volver al Inicio
+<a href="../index.html" class="btn btn-primary">
+    <i class="fas fa-arrow-left"></i> Volver al Inicio
 </a>
     <h1>Gestión de Infraestructura de Red</h1>
     <ul class="nav nav-pills justify-content-center">
