@@ -1,0 +1,337 @@
+/*=============================================================
+    Authour URI: www.binarytheme.com
+    License: Commons Attribution 3.0
+
+    http://creativecommons.org/licenses/by/3.0/
+
+    100% To use For Personal And Commercial Use.
+    IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
+
+    ========================================================  */
+
+
+
+/*=======================================
+    GENERAL STYLES
+==================================================*/
+body {
+          font-family:'Open Sans', sans-serif;
+    font-size:10px;
+  background: linear-gradient(to right, #08A382, #0B7663);
+ 
+}
+
+.nav a {
+    color:#ffffff !important;
+}
+.navbar-header a {
+    color:#ffffff !important;
+    padding-right:100px;
+}
+
+.text-center {
+    text-align:center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:'Open Sans', sans-serif;
+}
+
+h1 {
+    line-height:80px;
+    font-weight:900;
+    font-size:60px;
+    padding:30px 20px 10px 20px;
+}
+h2 {
+    line-height:40px;
+    font-weight:900;
+    font-size:30px;
+     padding:20px 20px 10px 20px;
+     text-transform:uppercase;
+}
+h3 {
+    line-height:30px;
+    padding-bottom:20px;
+}
+h4 {
+    line-height:40px;
+    padding-bottom:15px;
+}
+
+p {
+    font-weight:300;
+    line-height:30px;
+    padding-bottom:20px;
+}
+
+.space-free {
+    height:100px;
+}
+
+
+section {
+    padding-top:50px;
+    padding-bottom:30px;
+}
+
+/*=======================================
+    COLOR CODES
+==================================================*/
+.color-white {
+   background-color:#fff!important;
+}
+.color-dark {
+   background-color:#696969!important;
+}
+
+.color-light {
+   background-color:#E9E9E9!important;
+}
+
+/*=======================================
+    HEADER STYLES
+==================================================*/
+.head-main {
+    font-size:64px !important;
+    font-weight:900!important;
+    color:#fff!important;
+    padding:150px 20px 10px 20px;
+}
+.head-sub-main {
+    font-size:20px !important;
+    font-weight:600!important;
+    color:hwb(210 98% 1%)!important;
+    padding:5px 20px 150px 20px;    
+    text-align: right;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+}
+
+/*=======================================
+    quines somos STYLES
+==================================================*/
+ .about-content {
+    width: 100%;              /* 100% del ancho visible del navegador */
+    min-height: 100vh;         /* 100% del alto visible del navegador */
+
+    padding: 60px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #f9f9f9;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+.col-md-12 {
+    font-size: 1rem;     /* Tamaño del texto */
+    padding: 40px;         /* Espaciado interno */
+}
+
+
+        .intro-text, .team-description {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            color: #444;
+        }
+
+        .highlight-brand {
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .highlight-services {
+            color: #764ba2;
+            font-weight: 600;
+        }
+
+        .team-description em {
+            color: #667eea;
+            font-style: normal;
+            font-weight: 600;
+        }
+
+        .mission-vision-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .mission-card, .vision-card {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            border-left: 5px solid #667eea;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .vision-card {
+            border-left-color: #764ba2;
+        }
+
+        .mission-card:hover, .vision-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .card-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2c3e50;
+            letter-spacing: 0.5px;
+        }
+
+        .card-content {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        .values-highlight {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            padding: 25px;
+            background: linear-gradient(135deg, #667eea10, #764ba210);
+            border-radius: 15px;
+            border: 1px solid #e1e8ed;
+        }
+
+        .value-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .value-item:hover {
+            transform: scale(1.1);
+        }
+
+        .value-icon {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+
+        .value-text {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #2c3e50;
+            text-transform: uppercase;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .intro-text, .team-description, .card-content {
+                font-size: 1.05rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card-icon {
+                font-size: 2rem;
+            }
+            
+            .mission-card, .vision-card {
+                padding: 20px;
+            }
+
+            .value-text {
+                font-size: 0.9rem;
+            }
+
+            .value-icon {
+                font-size: 1.5rem;
+            }
+        }   
+/*=======================================
+    NAVIGATION STYLES
+==================================================*/
+
+nav {
+  position: fixed;   /* en lugar de absolute */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;      /* asegúrate que esté por encima de todo */
+  background-color: #fff;  /* o el color de tu diseño */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+
+.fixed {
+	position: fixed;
+	top: 0;
+	min-height: 50px;
+	z-index: 99;
+}
+
+.navbar-inverse {
+background: linear-gradient(to right, #071613, #0B7663);
+border-color: #000000;
+min-height: 80px;
+padding-top: 10px;
+font-size: 18px;
+}
+.navbar-brand {
+
+font-size: 20px;
+}
+
+/*=======================================
+    WORK FLOW STYLES
+==================================================*/
+
+
+.work-div {
+	width: 100%;
+	border: 0;
+    padding:20px;
+    margin-bottom:30px;
+}
+/*=======================================
+    CONTACT STYLES
+==================================================*/
+
+#social-icon a {
+    color:#616161!important;
+    margin-right:10px;
+}
+.contact-cls {
+    font-size:20px;
+    line-height:40px;
+}
+.cnt {
+width: 100%;
+min-height: 350px;
+border: 1px solid #e1e1e1;
+}
+/*=======================================
+    FOOTER STYLES
+==================================================*/
+
+
+#footer {
+    background: linear-gradient(to right, #071613, #0B7663);
+    color:#fff;
+    padding:20px 50px 20px 50px;
+    text-align:right;
+
+}
