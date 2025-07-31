@@ -193,7 +193,7 @@
             border: none;
             min-height: 70px;
             padding-top: 10px;
-            font-size: 16px;
+            font-size: 5px;
             width: 100%;
             position: fixed;
             top: 0;
@@ -202,17 +202,33 @@
         }
 
         .navbar-brand {
-            font-size: 22px;
+            font-size: 18px;
             color: #ffffff !important;
             padding: 15px;
         }
 
+        /*=======================================
+            este espara reducir de tamaño el texto de la barra de navegación
+        ==================================================*/
         .nav a {
             color: #ffffff !important;
             padding: 15px 20px;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 15px;
         }
+        
+        .navbar {
+  transition: background-color 0.4s ease, padding 0.4s ease, box-shadow 0.4s ease;
+  padding: 15px 0; /* padding normal */
+  background-color: transparent; /* fondo inicial transparente */
+}
+
+.navbar.scrolled {
+  background-color: #222 !important; /* fondo oscuro */
+  padding: 8px 0; /* reduce padding para hacerlo más pequeño */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+
 
         .navbar-toggle {
             border-color: #fff;
@@ -608,29 +624,65 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Navegación</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#home">EDPROGRAPHIC STUDIO'S</a>
-            </div>
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#home"><i class="fas fa-home"></i></a></li>
-                    <li><a href="#about">¿Quiénes somos?</a></li>
-                    <li><a href="#work-sec">Servicios</a></li>
-                    <li><a href="#contact-sec">Contáctanos</a></li>
-                    <li><a href="#prod">Productos</a></li>
-                    <li><a href="#map-sec">Ubicación</a></li>
-                    <li><a href="#formulario-sec">Pedido-Cotización</a></li>
-                </ul>
-            </div>
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Navegación</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#home">EDPROGRAPHIC STUDIO'S</a>
         </div>
-    </nav>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#home"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="#about"><i class="fas fa-users"></i> ¿Quiénes somos?</a></li>
+                <li><a href="#work-sec"><i class="fas fa-briefcase"></i> Servicios</a></li>
+                <li><a href="#prod"><i class="fas fa-box"></i> Productos</a></li>
+                <li><a href="#formulario-sec"><i class="fas fa-file-alt"></i> Pedido / Cotización</a></li>
+                <li><a href="#map-sec"><i class="fas fa-map-marker-alt"></i> Ubicación</a></li>
+                <li><a href="#contact-sec"><i class="fas fa-envelope"></i> Contáctanos</a></li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Navegación</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#home">EDPROGRAPHIC STUDIO'S</a>
+    </div>
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home"><i class="fas fa-home"></i> Inicio</a></li>
+        <li><a href="#about"><i class="fas fa-users"></i> ¿Quiénes somos?</a></li>
+        <li><a href="#work-sec"><i class="fas fa-briefcase"></i> Servicios</a></li>
+        <li><a href="#prod"><i class="fas fa-box"></i> Productos</a></li>
+        <li><a href="#formulario-sec"><i class="fas fa-file-alt"></i> Pedido / Cotización</a></li>
+        <li><a href="#map-sec"><i class="fas fa-map-marker-alt"></i> Ubicación</a></li>
+        <li><a href="#contact-sec"><i class="fas fa-envelope"></i> Contáctanos</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- SECCIONES DE PRUEBA PARA HACER SCROLL -->
+<section id="home" style="background-color: #f2f2f2;">Inicio</section>
+<section id="about" style="background-color: #e6e6e6;">¿Quiénes somos?</section>
+<section id="work-sec" style="background-color: #cccccc;">Servicios</section>
+<section id="prod" style="background-color: #b3b3b3;">Productos</section>
+<section id="formulario-sec" style="background-color: #999999;">Formulario</section>
+<section id="map-sec" style="background-color: #808080;">Mapa</section>
+<section id="contact-sec" style="background-color: #666666;">Contáctanos</section>
+
     <!--End Navigation-->
 
     <!--About Section-->
@@ -913,28 +965,41 @@
     </footer>
 
     <!-- JAVASCRIPT FILES -->
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    
+    <!-- jQuery y Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<!-- Script para efecto scroll -->
+<script>
+  $(window).on("scroll", function() {
+    if ($(this).scrollTop() > 50) {
+      $(".navbar").addClass("scrolled");
+    } else {
+      $(".navbar").removeClass("scrolled");
+    }
+  });
+</script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Custom JS -->
     <script>
-        // Smooth scrolling for navigation links
-        $(document).ready(function(){
-            $('a[href^="#"]').on('click',function (e) {
-                e.preventDefault();
-                var target = this.hash;
-                var $target = $(target);
-                $('html, body').stop().animate({
-                    'scrollTop': $target.offset().top - 70
-                }, 900, 'swing', function () {
-                    window.location.hash = target;
-                });
-            });
-            
-            // Mobile menu close on link click
-            $('.navbar-nav li a').click(function() {
-                $('.navbar-collapse').collapse('hide');
+        $(document).ready(function() {
+            // Smooth scrolling for navigation links
+            $('a[href^="#"]').on('click', function(event) {
+                var target = $(this.getAttribute('href'));
+                if (target.length) {
+                    event.preventDefault();
+                    $('html, body').stop().animate({
+                        scrollTop: target.offset().top - 70
+                    }, 1000);
+                }
             });
         });
-    </script>
+    </script> 
+    <!-- End of Custom JS -->   
+          
+  
+
 </body>
 </html>
