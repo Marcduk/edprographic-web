@@ -1,146 +1,271 @@
-/*=============================================================
-    Authour URI: www.binarytheme.com
-    License: Commons Attribution 3.0
 
-    http://creativecommons.org/licenses/by/3.0/
+        /*=======================================
+            GENERAL STYLES
+        ==================================================*/
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            background: linear-gradient(to right, #08A382, #0B7663);
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
 
-    100% To use For Personal And Commercial Use.
-    IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
 
-    ========================================================  */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+        }
 
+        .col-md-12 {
+            width: 100%;
+            padding: 0 15px;
+        }
 
+        .col-md-8 {
+            width: 66.66%;
+            padding: 0 15px;
+        }
 
-/*=======================================
-    GENERAL STYLES
-==================================================*/
-body {
-          font-family:'Open Sans', sans-serif;
-    font-size:10px;
-  background: linear-gradient(to right, #08A382, #0B7663);
-  background-size: cover;
- 
+        .col-md-offset-2 {
+            margin-left: 16.66%;
+        }
+
+        .col-md-4 {
+            width: 33.33%;
+            padding: 0 15px;
+        }
+
+        .col-md-5 {
+            width: 41.66%;
+            padding: 0 15px;
+        }
+
+        .col-md-7 {
+            width: 58.33%;
+            padding: 0 15px;
+        }
+
+        /* RESPONSIVE BREAKPOINTS */
+        @media (max-width: 768px) {
+            .col-md-12,
+            .col-md-8,
+            .col-md-4,
+            .col-md-5,
+            .col-md-7 {
+                width: 100%;
+                margin-left: 0;
+            }
+            
+            .col-md-offset-2 {
+                margin-left: 0;
+            }
+            
+            .row {
+                margin: 0;
+            }
+            
+            .container {
+                padding: 0 10px;
+            }
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            line-height: 1.2;
+            font-weight: 900;
+            font-size: 4.5rem;
+            padding: 30px 20px 10px 20px;
+            color: #fff;
+        }
+
+        h2 {
+            line-height: 1.2;
+            font-weight: 900;
+            font-size: 2.8rem;
+            padding: 20px 20px 10px 20px;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            line-height: 1.4;
+            padding-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        h4 {
+            line-height: 1.4;
+            padding-bottom: 15px;
+            font-size: 1.6rem;
+        }
+
+        h5 {
+            font-size: 1.4rem;
+        }
+
+        p {
+            font-weight: 300;
+            line-height: 1.8;
+            padding-bottom: 20px;
+            margin: 0;
+            font-size: 1.2rem;
+        }
+
+        section {
+            padding: 50px 0 30px 0;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        /*=======================================
+            COLOR CODES
+        ==================================================*/
+        .color-white {
+            background-color: #fff !important;
+        }
+
+        .color-light {
+            background-color: #E9E9E9 !important;
+        }
+
+        /*=======================================
+            HEADER STYLES
+        ==================================================*/
+        .head-main {
+            font-size: 4.5rem !important;
+            font-weight: 900 !important;
+            color: #fff !important;
+            padding: 150px 20px 10px 20px;
+        }
+
+        .head-sub-main {
+            font-size: 1.8rem !important;
+            font-weight: 600 !important;
+            color: #f0f8ff !important;
+            padding: 5px 20px 150px 20px;
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+            font-style: italic;
+        }
+
+        /*=======================================
+            NAVIGATION STYLES
+        ==================================================*/
+        .navbar-inverse {
+            background: linear-gradient(to right, #071613, #0B7663);
+            border: none;
+            min-height: 70px;
+            padding-top: 10px;
+            font-size: 5px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        .navbar-brand {
+            font-size: 18px;
+            color: #ffffff !important;
+            padding: 15px;
+        }
+
+        /*=======================================
+            este espara reducir de tamaño el texto de la barra de navegación
+        ==================================================*/
+        .nav a {
+            color: #ffffff !important;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        
+        .navbar {
+  transition: background-color 0.4s ease, padding 0.4s ease, box-shadow 0.4s ease;
+  padding: 15px 0; /* padding normal */
+  background-color: transparent; /* fondo inicial transparente */
 }
 
-.nav a {
-    color:#ffffff !important;
-}
-.navbar-header a {
-    color:#ffffff !important;
-    padding-right:100px;
-}
-
-.text-center {
-    text-align:center;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family:'Open Sans', sans-serif;
-}
-
-h1 {
-    line-height:80px;
-    font-weight:900;
-    font-size:60px;
-    padding:30px 20px 10px 20px;
-}
-h2 {
-    line-height:40px;
-    font-weight:900;
-    font-size:30px;
-     padding:20px 20px 10px 20px;
-     text-transform:uppercase;
-}
-h3 {
-    line-height:30px;
-    padding-bottom:20px;
-}
-h4 {
-    line-height:40px;
-    padding-bottom:15px;
-}
-
-p {
-    font-weight:300;
-    line-height:30px;
-    padding-bottom:20px;
-}
-
-.space-free {
-    height:100px;
+.navbar.scrolled {
+  background-color: #222 !important; /* fondo oscuro */
+  padding: 8px 0; /* reduce padding para hacerlo más pequeño */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.6);
 }
 
 
-section {
-    padding-top:50px;
-    padding-bottom:30px;
-}
+        .navbar-toggle {
+            border-color: #fff;
+            background-color: transparent;
+            margin-top: 15px;
+        }
 
-/*=======================================
-    COLOR CODES
-==================================================*/
-.color-white {
-   background-color:#fff!important;
-}
-.color-dark {
-   background-color:#696969!important;
-}
+        .navbar-toggle .icon-bar {
+            background-color: #fff;
+        }
 
-.color-light {
-   background-color:#E9E9E9!important;
-}
+        .navbar-collapse {
+            border-top: none;
+        }
 
-/*=======================================
-    HEADER STYLES
-==================================================*/
-.head-main {
-    font-size:64px !important;
-    font-weight:900!important;
-    color:#fff!important;
-    padding:150px 20px 10px 20px;
-}
-.head-sub-main {
-    font-size:20px !important;
-    font-weight:600!important;
-    color:hwb(210 98% 1%)!important;
-    padding:5px 20px 150px 20px;    
-    text-align: right;
-    font-family: 'Open Sans', sans-serif;
-    font-style: italic;
-}
+        @media (max-width: 768px) {
+            .navbar-brand {
+                font-size: 16px;
+                padding: 10px 15px;
+            }
+            
+            .nav {
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            .nav li {
+                width: 100%;
+                text-align: center;
+            }
+        }
 
-/*=======================================
-    quines somos STYLES
-==================================================*/
- .about-content {
-    width: 100%;              /* 100% del ancho visible del navegador */
-    min-height: 100%;         /* 100% del alto visible del navegador */
+        /*=======================================
+            ABOUT SECTION STYLES
+        ==================================================*/
+        .about-content {
+            width: 100%;
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+            font-family: 'Open Sans', sans-serif;
+            text-align: center;
+        }
 
-    padding: 60px 20px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    background-color: #f9f9f9;
-
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.5rem;
-    text-align: center;
-    box-sizing: border-box;
-}
-.col-md-12 {
-    font-size: 1rem;     /* Tamaño del texto */
-    padding: 40px;         /* Espaciado interno */
-}
-
+        .company-intro {
+            margin-bottom: 40px;
+        }
 
         .intro-text, .team-description {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             line-height: 1.8;
             margin-bottom: 25px;
             color: #444;
+            text-align: justify;
         }
 
         .highlight-brand {
@@ -153,12 +278,6 @@ section {
             font-weight: 600;
         }
 
-        .team-description em {
-            color: #667eea;
-            font-style: normal;
-            font-weight: 600;
-        }
-
         .mission-vision-stack {
             display: flex;
             flex-direction: column;
@@ -168,171 +287,307 @@ section {
 
         .mission-card, .vision-card {
             background: #f8f9fa;
-            padding: 30px;
+            padding: 25px;
             border-radius: 15px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.08);
             border-left: 5px solid #667eea;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: transform 0.3s ease;
         }
 
         .vision-card {
             border-left-color: #764ba2;
         }
 
-        .mission-card:hover, .vision-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-        }
-
         .card-icon {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
+            font-size: 3rem;
+            margin-bottom: 15px;
         }
 
         .card-title {
-            font-size: 1.4rem;
+            font-size: 1.8rem;
             font-weight: bold;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             color: #2c3e50;
-            letter-spacing: 0.5px;
         }
 
         .card-content {
-            font-size: 1rem;
-            line-height: 1.7;
+            font-size: 1.3rem;
+            line-height: 1.8;
             color: #555;
+            text-align: justify;
         }
 
         .values-highlight {
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
-            margin-top: 50px;
+            margin-top: 40px;
             padding: 25px;
             background: linear-gradient(135deg, #667eea10, #764ba210);
             border-radius: 15px;
-            border: 1px solid #e1e8ed;
         }
 
         .value-item {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin: 15px;
-            transition: transform 0.3s ease;
-        }
-
-        .value-item:hover {
-            transform: scale(1.1);
+            margin: 10px;
         }
 
         .value-icon {
-            font-size: 2rem;
-            margin-bottom: 8px;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
         }
 
         .value-text {
-            font-size: 1rem;
+            font-size: 1.1rem;
             font-weight: 600;
             color: #2c3e50;
             text-transform: uppercase;
         }
 
-        /* Responsive */
+        /*=======================================
+            SERVICES AND PRODUCTS
+        ==================================================*/
+        .services-list {
+            text-align: left;
+            font-size: 1.3rem;
+            line-height: 2.2;
+            color: #333;
+        }
+
+        .work-div {
+            width: 100%;
+            padding: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .work-div i {
+            color: #08A382;
+            margin-bottom: 20px;
+        }
+
+        /*=======================================
+            CONTACT STYLES
+        ==================================================*/
+        .contact-cls {
+            font-size: 1.3rem;
+            line-height: 2;
+        }
+
+        #social-icon {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #social-icon a {
+            color: #08A382 !important;
+            margin: 0 10px;
+            font-size: 2rem;
+        }
+
+        /*=======================================
+            FORM STYLES
+        ==================================================*/
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+            font-size: 1.2rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #08A382;
+        }
+
+        .btn-submit {
+            padding: 18px 35px;
+            background-color: #08A382;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.3rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+
+        .btn-submit:hover {
+            background-color: #0B7663;
+        }
+
+        /*=======================================
+            MAP STYLES
+        ==================================================*/
+        .map-container {
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /*=======================================
+            FOOTER STYLES
+        ==================================================*/
+        footer {
+            background-color: #08A382;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        /*=======================================
+            DESKTOP ENHANCEMENTS FOR BETTER READABILITY
+        ==================================================*/
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1400px;
+            }
+            
+            h1 {
+                font-size: 5.5rem;
+            }
+            
+            h2 {
+                font-size: 3.2rem;
+            }
+            
+            .head-main {
+                font-size: 5.5rem !important;
+            }
+            
+            .head-sub-main {
+                font-size: 2.2rem !important;
+            }
+            
+            p {
+                font-size: 1.4rem;
+            }
+            
+            .intro-text, .team-description {
+                font-size: 1.6rem;
+            }
+            
+            .card-content {
+                font-size: 1.4rem;
+            }
+            
+            .services-list {
+                font-size: 1.5rem;
+            }
+        }
+
+        /*=======================================
+            MOBILE RESPONSIVE
+        ==================================================*/
         @media (max-width: 768px) {
-            .intro-text, .team-description, .card-content {
-                font-size: 1.05rem;
+            body {
+                padding-top: 70px;
+            }
+            
+            .head-main {
+                font-size: 2.5rem !important;
+                padding: 100px 15px 10px 15px;
+            }
+
+            .head-sub-main {
+                font-size: 1rem !important;
+                padding: 5px 15px 100px 15px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+                padding: 15px 10px;
+            }
+
+            .intro-text, .team-description {
+                font-size: 1rem;
+                text-align: left;
+            }
+
+            .mission-card, .vision-card {
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+
+            .values-highlight {
+                padding: 15px;
+            }
+
+            .value-item {
+                margin: 5px;
+                min-width: 80px;
+            }
+
+            .work-div {
+                margin-bottom: 20px;
+            }
+
+            .contact-cls {
+                font-size: 1rem;
+                margin-bottom: 20px;
+            }
+
+            .map-container {
+                height: 300px;
+            }
+            
+            .navbar-collapse.in {
+                background-color: rgba(7, 22, 19, 0.95);
             }
         }
 
         @media (max-width: 480px) {
-            .card-icon {
-                font-size: 2rem;
+            .container {
+                padding: 0 5px;
             }
             
-            .mission-card, .vision-card {
-                padding: 20px;
+            .head-main {
+                font-size: 2rem !important;
+                padding: 80px 10px 10px 10px;
             }
 
-            .value-text {
-                font-size: 0.9rem;
+            .card-icon {
+                font-size: 1.5rem;
             }
 
             .value-icon {
                 font-size: 1.5rem;
             }
-        }   
-/*=======================================
-    NAVIGATION STYLES
-==================================================*/
 
-nav {
-  position: fixed;   /* en lugar de absolute */
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 999;      /* asegúrate que esté por encima de todo */
-  background-color: #fff;  /* o el color de tu diseño */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-
-.fixed {
-	position: fixed;
-	top: 0;
-	min-height: 50px;
-	z-index: 99;
-}
-
-.navbar-inverse {
-background: linear-gradient(to right, #071613, #0B7663);
-border-color: #000000;
-min-height: 80px;
-padding-top: 10px;
-font-size: 18px;
-}
-.navbar-brand {
-
-font-size: 20px;
-}
-
-/*=======================================
-    WORK FLOW STYLES
-==================================================*/
-
-
-.work-div {
-	width: 100%;
-	border: 0;
-    padding:20px;
-    margin-bottom:30px;
-}
-/*=======================================
-    CONTACT STYLES
-==================================================*/
-
-#social-icon a {
-    color:#616161!important;
-    margin-right:10px;
-}
-.contact-cls {
-    font-size:20px;
-    line-height:40px;
-}
-.cnt {
-width: 100%;
-min-height: 350px;
-border: 1px solid #e1e1e1;
-}
-/*=======================================
-    FOOTER STYLES
-==================================================*/
-
-
-#footer {
-    background: linear-gradient(to right, #071613, #0B7663);
-    color:#fff;
-    padding:20px 50px 20px 50px;
-    text-align:right;
-
-}
+            .value-text {
+                font-size: 0.8rem;
+            }
+        }
