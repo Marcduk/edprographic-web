@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*=============================================================
     Authour URI: www.binarytheme.com
     License: Commons Attribution 3.0
@@ -64,7 +63,6 @@
     });
 
 }(jQuery));
-=======
 /*=============================================================
     Authour URI: www.binarytheme.com
     License: Commons Attribution 3.0
@@ -130,4 +128,3 @@
     });
 
 }(jQuery));
->>>>>>> 5639bbd6bffbd4977e3026522939920e25a2f088
