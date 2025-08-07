@@ -954,16 +954,41 @@ border: 1px solid #e1e1e1;
 }
 
 
+/*=======================================whatsapp BUTTON STYLES==================================*/
+.whatsapp-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #25D366;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  padding: 12px 20px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-button:hover {
+  background-color: #1EBE57;
+}
+
+.whatsapp-button i {
+  margin-right: 10px;
+  font-size: 20px;
+}
 /*=======================================logotipo STYLES==================================*/
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
         
         .logo-container {
-            perspective: 1000px;
+            perspective: 100px;
         }
 
         .logo-3d {
-            background: linear-gradient(145deg, #ffffff, #f8f9fa);
+            
             border-radius: 30px;
             padding: 50px;
             box-shadow: 
@@ -1084,7 +1109,7 @@ border: 1px solid #e1e1e1;
         .company-main {
             font-size: 36px;
             font-weight: 900;
-            background: linear-gradient(135deg, #2d3436, #636e72);
+            background: #2d3436;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -1118,7 +1143,8 @@ border: 1px solid #e1e1e1;
         .company-type {
             font-size: 12px;
             font-weight: 500;
-            color: #636e72;
+            
+            color: #2d3436;
             letter-spacing: 3px;
             text-transform: uppercase;
         }
@@ -1127,7 +1153,7 @@ border: 1px solid #e1e1e1;
             text-align: center;
             font-size: 16px;
             font-weight: 400;
-            color: #636e72;
+            color: white;
             margin-top: 15px;
             font-style: italic;
         }
